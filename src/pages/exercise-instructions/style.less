@@ -1,0 +1,266 @@
+.settingsTitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+
+.noMarginBottom {
+    margin-bottom: 0;
+}
+
+.textUnderline {
+    text-decoration: underline;
+}
+
+.textBg {
+    background-color: #f2f2f2;
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+    input {
+      background-color: #f2f2f2;
+      font-size: 14px;
+      color: #555;
+      font-style: italic;
+    }
+}
+
+.borderNone {
+    border: none;
+}
+
+.centerAlign {
+    text-align: center;
+}
+
+.img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.descriptions {
+    font-size: 12px;
+}
+
+.cardBox {
+    border: 1px solid #80808080 !important;
+    -webkit-box-shadow: 9px 12px 7px -7px rgba(0,0,0,0.09);
+    -moz-box-shadow: 9px 12px 7px -7px rgba(0,0,0,0.09);
+    box-shadow: 9px 12px 7px -7px rgba(0,0,0,0.09);
+}
+
+.warning {
+    color: #00b0f0;
+    font-weight: bold;
+}
+
+.error {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.bold {
+    color: #000000;
+    font-weight: bold;
+}
+
+.cardBox .ant-card-body {
+    padding-bottom: 20px;
+}
+
+.customBtn {
+    border: none;
+    opacity: 0.5;
+    box-shadow: none;
+}
+
+.changeBtnTxt {
+    color: black;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.fontColor {
+    color: black;
+}
+
+.layoutWithSider {
+    color: black;
+
+    :global {
+        .ant-layout-content.no-transition {
+            transition: none !important;
+        }
+        .ant-layout-content {
+            transition: margin 200ms;
+        }
+    }
+}
+
+.contentCardBox {
+    :global {
+        .ant-card-body {
+            padding: 20px 0px 48px;
+        }
+
+        .ant-card-loading-content {
+            padding: 0px 48px;
+        }
+
+        .ant-progress {
+            position: absolute;
+            bottom: 130px;
+
+            .ant-progress-inner, 
+            .ant-progress-success-bg, 
+            .ant-progress-bg {
+                border-radius: 0px;
+                height: 5px !important;
+            }
+
+            .ant-progress-inner {
+                background-color: rgb(194, 246, 241);
+            }
+
+            .ant-progress-bg {
+                background-color: #03dac5;
+            }
+        }
+    }
+}
+
+.exerciseBtnBox {
+    padding: 0 48px;
+    text-align: right;
+}
+
+.exerciseInstructionBox {
+    padding: 0px 48px;
+
+    :global {
+        .ant-list-pagination {
+            text-align: center;
+            padding-right: 80px;
+        }
+
+        .ant-pagination-item {
+            line-height: 27px;
+        }
+
+        .ant-pagination-item,
+        .ant-pagination-prev .ant-pagination-item-link, 
+        .ant-pagination-next .ant-pagination-item-link {
+            border-radius: 50%;
+        }
+
+        .ant-pagination-prev:focus .ant-pagination-item-link, 
+        .ant-pagination-next:focus .ant-pagination-item-link, 
+        .ant-pagination-prev:hover .ant-pagination-item-link, 
+        .ant-pagination-next:hover .ant-pagination-item-link {
+            color: #03dac5;
+            border-color: #03dac5;
+        }
+
+        .ant-pagination-item-active {
+            background: #03dac5;
+            border-color: #03dac5;
+
+            a {
+                color: #fff !important;
+            }
+        }
+
+        .ant-pagination-item:focus, .ant-pagination-item:hover {
+            border-color: #03dac5;
+            color: #03dac5;
+
+            a {
+                color: #03dac5;
+            }
+        }
+        
+        .ant-card-head-title {
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+
+        .ant-card-head {
+            padding: 0px;
+            border-bottom: 0px;
+            min-height: auto;
+        }
+    }
+}
+
+.backSection {
+    padding: 28px 33px 0px;
+}
+
+.playerBox,
+.imageBox {
+    width: auto !important;
+}
+
+.isMobileSize {
+    .backSection {
+        padding: 28px 7px 0px;
+    }
+
+    &.layoutWithSider {
+        min-height: 100%;
+    }
+
+    .playerBox,
+    .imageBox {
+        width: 100% !important;
+    }
+
+    .contentCardBox {
+        :global {
+            .ant-card-loading-content {
+                padding: 0px 24px;
+            }
+        }
+    }
+
+    .instructionContentFooter {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        padding-bottom: 18px;
+        background: #fff;
+
+        :global {
+            .ant-progress {
+                margin-bottom: 15px;
+
+                .ant-progress-inner, 
+                .ant-progress-success-bg, 
+                .ant-progress-bg {
+                    border-radius: 0px;
+                    height: 5px !important;
+                }
+
+                .ant-progress-inner {
+                    background-color: rgb(194, 246, 241);
+                }
+
+                .ant-progress-bg {
+                    background-color: #03dac5;
+                }
+            }
+        }
+    }
+    .exerciseBtnBox {
+        padding: 0px 65px;
+    }
+
+    .exerciseInstructionBox {
+        padding: 0px 24px;
+
+        :global {
+            .ant-list-pagination {
+                padding-right: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,185 @@
+.settingsTitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+
+.noMarginBottom {
+    margin-bottom: 0;
+}
+
+.textUnderline {
+    text-decoration: underline;
+}
+
+.textBg {
+    background-color: #f2f2f2;
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+    input {
+      background-color: #f2f2f2;
+      font-size: 14px;
+      color: #555;
+      font-style: italic;
+    }
+}
+
+.borderNone {
+    border: none;
+}
+
+.centerAlign {
+    text-align: center;
+}
+
+.img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.descriptions {
+    font-size: 12px;
+}
+
+.cardBox {
+    border: 1px solid #80808080 !important;
+    -webkit-box-shadow: 9px 12px 7px -7px rgba(0,0,0,0.09);
+    -moz-box-shadow: 9px 12px 7px -7px rgba(0,0,0,0.09);
+    box-shadow: 9px 12px 7px -7px rgba(0,0,0,0.09);
+}
+
+.warning {
+    color: #00b0f0;
+    font-weight: bold;
+}
+
+.error {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.bold {
+    color: #000000;
+    font-weight: bold;
+}
+
+.cardBox .ant-card-body {
+    padding-bottom: 20px;
+}
+
+.customBtn {
+    border: none;
+    opacity: 0.5;
+    box-shadow: none;
+}
+
+.changeBtnTxt {
+    color: black;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.fontColor {
+    color: black;
+}
+
+.layoutWithSider {
+    color: black;
+
+    :global {
+        .ant-layout-content {
+            transition: margin 200ms;
+        }
+
+        .ant-layout-sider {
+            -webkit-box-shadow: 0px 0px 15px 5px rgba(200,200,200,0.95); 
+            box-shadow: 0px 0px 15px 5px rgba(200,200,200,0.95);    
+            z-index: 1;
+        }
+
+        .ant-layout-sider-trigger {
+            text-align: right;
+            padding-right: 40px;
+            padding-left: 20px;
+            font-size: 20px;
+            border-top: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        .ant-layout-sider-collapsed {
+            width: 0px !important;
+            min-width: 0px !important;
+            max-width: 0px !important;
+
+            .ant-layout-sider-trigger {
+                border-right: 1px solid rgba(0, 0, 0, 0.06);
+            }
+        }
+    }
+}
+
+.customerSliderBarDot {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: rgb(3, 218, 197);
+    right: auto;
+    transform: translateX(-50%);
+    border-color: rgb(3, 218, 197) !important;
+    border-radius: 50%;
+    top: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.customSliderBar {
+    width: 100%;
+    margin: 0px 6px;
+    position: relative;
+
+    :global {
+        .ant-progress-bg {
+            height: 6px !important;
+        }
+
+        .ant-slider {
+            padding: 3px 0;
+        }
+
+        .ant-slider-handle {
+            margin-top: -4px;
+            cursor: pointer;
+        }
+
+        .ant-slider-step,
+        .ant-slider-track,
+        .ant-slider-rail {
+            height: 6px;
+            border-radius: 0px;
+        }
+
+        .ant-slider-rail,
+        .ant-progress-inner {
+            background-color: #c2f6f1;
+            border-radius: 0px;
+        }
+
+        .ant-slider:hover .ant-slider-rail {
+            background-color: #c2f6f1;
+        }
+
+        .ant-slider-disabled .ant-slider-track,
+        .ant-progress-success-bg, .ant-progress-bg {
+            background-color: #03dac5 !important;
+            border-radius: 0px;
+        }
+
+        .ant-slider-disabled .ant-slider-handle, .ant-slider-disabled .ant-slider-dot {
+            background-color: #03dac5;
+            border-color: #03dac5 !important;
+        }
+
+        .ant-slider-disabled {
+            cursor: auto;
+        }
+    }
+}

@@ -1,0 +1,185 @@
+.exerciseDescription {
+    color: rgba(0, 0, 0, 0.45);
+    margin-bottom: 0 !important;
+}
+
+.stepDataList {
+  :global {
+      .ant-card-body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 0;
+      }
+
+      .ant-progress {
+        position: absolute;
+        left: -3px;
+        top: 7px;
+      }
+
+      .ant-card-bordered {
+          border: 0px;
+          border-bottom-width: 0px;
+      }
+
+      .ant-card-bordered:last-child {
+          border-bottom: none;
+      }
+       
+      .ant-collapse-header {
+          padding: 10px 15px !important;
+          border: 1px solid #f0f0f0;
+          margin-left: 55px;
+
+          .ant-typography {
+              display: inline-block;
+              margin-bottom: 0px;
+              width: calc(~'100% - 120px');
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+          }
+      }
+
+      .ant-progress-inner:not(.ant-progress-circle-gradient) .ant-progress-circle-path {
+          stroke-width: 15px;
+          stroke: #25ddcc;
+      }
+
+      .ant-steps-item-content {
+          overflow: unset !important;
+      }
+
+      .ant-collapse-content-box {
+          border: 1px solid #f0f0f0;
+          margin-left: 55px;
+      }
+
+      .ant-steps-item-icon {
+          margin-top: 10.5px;
+      }
+
+      .ant-steps-item > .ant-steps-item-container > .ant-steps-item-tail {
+          top: 10px !important;
+          left: 14px !important;
+      }
+
+      .ant-steps-item > .ant-steps-item-container > .ant-steps-item-tail::after {
+          width: 4px;
+          background: #dbebf6;
+      }
+
+      .ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-tail::after {
+          background-color: #25ddcc !important;
+      }
+
+      .ant-collapse-header > .ant-collapse-arrow {
+          top: 10px !important;
+          padding: 0 !important;
+          left: -55px !important;
+          transform: none !important;
+      }
+
+      .ant-steps-item .ant-steps-item-description {
+          padding-bottom: 5px;
+          position: relative;
+      }
+
+      .ant-steps-item:last-child > .ant-steps-item-container > .ant-steps-item-tail, .ant-steps-item:last-child > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title::after {
+          display: block;
+          height: ~"calc(100% - 9px)";
+      }
+
+      .ant-steps-item-finish .ant-collapse-arrow {
+        color: #0077cc !important;
+      }
+  }    
+}
+
+.exerciseContent {
+  margin-right: auto;
+  width: 100%;
+}
+
+.btnDetails {
+  min-width: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.borderless {
+    :global {
+        .ant-collapse-header,
+        .ant-collapse-content-box,
+        .ant-card-bordered {
+            border-color: white !important;
+        }
+
+        .ant-collapse-item-active .ant-collapse-header {
+            border-bottom-color: #f0f0f0 !important;
+            border-bottom-width: 2px;
+        }
+    }
+}
+
+.isMobileSize.stepDataList {
+    :global {
+        h5.ant-typography {
+            font-size: 12px;
+        }
+
+        .ant-collapse-header {
+            margin-left: 35px;
+            padding: 10px 10px !important;
+
+            .ant-typography {
+                font-size: 14px;
+                margin-top: 3px;
+                width: calc(~'100% - 110px') !important;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+
+        .ant-collapse-header > .ant-collapse-arrow {
+            left: -35px !important;
+            font-size: 24px !important;
+        }
+
+        .ant-collapse-content-box { 
+            margin-left: 35px;
+        }
+
+        .ant-progress-inner {
+            width: 32px !important;
+            height: 32px !important;
+        }
+
+        .ant-steps-item > .ant-steps-item-container > .ant-steps-item-tail {
+            left: 10px !important;
+            padding: 32px 0 6px;
+        }
+    }
+    
+    .exerciseDescription {
+        font-size: 12px;
+    }
+
+    .exerciseContentBox {
+        :global {
+            .ant-collapse-content-box {
+                padding-right: 10px;
+            }
+        }
+    }
+ 
+    .btnDetails {
+        min-width: 90px;
+        font-size: 11px;
+    }
+}

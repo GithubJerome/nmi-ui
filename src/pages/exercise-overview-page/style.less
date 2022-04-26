@@ -1,0 +1,183 @@
+.settingsTitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+
+.noMarginBottom {
+    margin-bottom: 0;
+}
+
+.textUnderline {
+    text-decoration: underline;
+}
+
+.textBg {
+    background-color: #f2f2f2;
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+    input {
+      background-color: #f2f2f2;
+      font-size: 14px;
+      color: #555;
+      font-style: italic;
+    }
+}
+
+.borderNone {
+    border: none;
+}
+
+.centerAlign {
+    text-align: center;
+}
+
+.img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.descriptions {
+    font-size: 12px;
+}
+
+.cardBox {
+    border: 1px solid #80808080 !important;
+    -webkit-box-shadow: 9px 12px 7px -7px rgba(0,0,0,0.09);
+    -moz-box-shadow: 9px 12px 7px -7px rgba(0,0,0,0.09);
+    box-shadow: 9px 12px 7px -7px rgba(0,0,0,0.09);
+}
+
+.warning {
+    color: #00b0f0;
+    font-weight: bold;
+}
+
+.error {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.bold {
+    color: #000000;
+    font-weight: bold;
+}
+
+.cardBox .ant-card-body {
+    padding-bottom: 20px;
+}
+
+.customBtn {
+    border: none;
+    opacity: 0.5;
+    box-shadow: none;
+}
+
+.changeBtnTxt {
+    color: black;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.fontColor {
+    color: black;
+}
+
+.layoutWithSider {
+    color: black;
+
+    :global {
+        .ant-result-404 {
+            margin: 0 auto;
+        }
+        
+        .ant-layout-content.no-transition {
+            transition: none !important;
+        }
+        
+        .ant-layout-content {
+            transition: margin 200ms;
+        }
+    }
+}
+
+.contentCardBox {
+    :global {
+        .ant-card-body {
+            padding: 20px 0px 48px;
+        }
+        
+        .ant-card-loading-content {
+            padding: 0px 48px;
+        }
+
+        .ant-progress {
+            .ant-progress-inner, 
+            .ant-progress-success-bg, 
+            .ant-progress-bg {
+                border-radius: 0px;
+                height: 5px !important;
+            }
+
+            .ant-progress-inner {
+                background-color: rgb(194, 246, 241);
+            }
+
+            .ant-progress-bg {
+                background-color: #f23434;
+            }
+
+            .ant-progress-success-bg {
+                background-color: #03dac5;
+            }
+        }
+    }
+}
+
+.exerciseContent {
+    padding: 0px 48px;
+}
+
+.backSection {
+    padding: 28px 33px 0px;
+}
+
+.exerciseBtnBox {
+    padding: 0 48px;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.isMobileSize {
+    &.layoutWithSider {
+        min-height: 100%;
+    }
+
+    .exerciseBtnBox {
+        padding: 0px 65px;
+    }
+
+    .exerciseContent {
+        padding: 0px 24px;
+    }
+
+    .backSection {
+        padding: 28px 7px 0px;
+    }
+
+    .contentCardBox {
+        :global {
+            .ant-card-loading-content {
+                padding: 0px 24px;
+            }
+        }
+    }
+
+    .exerciseContentFooter {
+        position: fixed;
+        bottom: 0;
+        padding-bottom: 18px;
+        background: #fff;
+        width: 100%;
+    }
+}

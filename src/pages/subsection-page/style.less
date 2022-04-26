@@ -1,0 +1,270 @@
+
+.settingsTitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+
+.noMarginBottom {
+    margin-bottom: 0;
+}
+
+.textUnderline {
+    text-decoration: underline;
+}
+
+.textBg {
+    background-color: #f2f2f2;
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+    input {
+      background-color: #f2f2f2;
+      font-size: 14px;
+      color: #555;
+      font-style: italic;
+    }
+}
+
+.borderNone {
+    border: none;
+}
+
+.centerAlign {
+    text-align: center;
+}
+
+.img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.descriptions {
+    font-size: 12px;
+}
+
+.cardBox {
+    border: 1px solid #80808080 !important;
+    -webkit-box-shadow: 9px 12px 7px -7px rgba(0,0,0,0.09);
+    -moz-box-shadow: 9px 12px 7px -7px rgba(0,0,0,0.09);
+    box-shadow: 9px 12px 7px -7px rgba(0,0,0,0.09);
+}
+
+.warning {
+    color: #00b0f0;
+    font-weight: bold;
+}
+
+.error {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.bold {
+    color: #000000;
+    font-weight: bold;
+}
+
+.cardBox .ant-card-body {
+    padding-bottom: 20px;
+}
+
+.customBtn {
+    border: none;
+    opacity: 0.5;
+    box-shadow: none;
+}
+
+.changeBtnTxt {
+    color: black;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.fontColor {
+    color: black;
+}
+
+.stepDataList {
+    :global {
+        .ant-card-body {
+            padding: 17px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .ant-progress  {
+            position: absolute;
+            left: -3px;
+            top: 16px;
+        }
+
+        .ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-icon .ant-steps-icon {
+            display: none;
+        }
+  
+        .ant-collapse-content-box {
+            border: 1px solid #f0f0f0;
+            margin-left: 55px;
+        }
+  
+        .ant-steps-item-icon {
+            margin-top: 19px;
+        }
+  
+        .ant-steps-item > .ant-steps-item-container > .ant-steps-item-tail {
+            top: 19px !important;
+            left: 14px !important;
+        }
+  
+        .ant-steps-item > .ant-steps-item-container > .ant-steps-item-tail::after {
+            width: 4px;
+            background: #dbebf6;
+        }
+  
+        .ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-tail::after {
+            background-color: #25ddcc !important;
+        }
+        
+        .ant-progress-inner:not(.ant-progress-circle-gradient) .ant-progress-circle-path {
+            stroke-width: 10px;
+            stroke: #25ddcc;
+        }
+
+        .ant-collapse-header > .ant-collapse-arrow {
+            top: 10px !important;
+            left: -55px !important;
+            padding: 0 !important;
+            transform: none !important;
+        }
+  
+        .ant-steps-item .ant-steps-item-description {
+            padding-bottom: 5px;
+        }
+
+        .ant-steps-item-wait .ant-steps-item-icon > .ant-steps-icon,
+        .ant-steps-item-finish .ant-steps-item-icon > .ant-steps-icon,
+        .ant-steps-item-current .ant-steps-item-icon > .ant-steps-icon {
+            display: none;
+        }
+
+        .ant-steps-item-process .ant-steps-item-icon,
+        .ant-steps-item-wait .ant-steps-item-icon {
+            background-color: #1890ff;
+            border-color: #1890ff;
+        }
+
+        
+        .ant-steps-item-current .ant-steps-item-icon {
+            background-color: #f3a821;
+            border-color: #f3a821;
+        }
+
+        .ant-steps-item-finish .ant-steps-item-icon {
+            background-color: #25ddcc;
+            border-color: #25ddcc;
+        }   
+    }
+}
+.timelineCourseSection {
+    :global {
+        .ant-card-body {
+            padding: 17px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .ant-timeline-item-content {
+            margin: 0 0 0 46px;
+        }
+
+        .ant-timeline-item-head-blue {
+            background: #1890ff;
+        }
+
+        .ant-timeline-item-head {
+            width: 30px;
+            height: 30px;
+            top: 25px; 
+        }
+
+        .ant-timeline-item-tail {
+            border-left: 4px solid #f0f0f0;
+            left: 13px;
+            top: 40px;
+        }
+    }
+}
+
+.exerciseDescription {
+    color: rgba(0, 0, 0, 0.45);
+    margin-bottom: 0 !important;
+}
+
+.layoutWithSider {
+    color: black;
+
+    :global {
+
+        .ant-layout-content.no-transition {
+            transition: none !important;
+        }
+        .ant-layout-content {
+            transition: margin 200ms;
+        }
+    }
+}
+
+.contentContainer {
+  padding: 28px 33px 0px;
+}
+
+.isMobileSize {
+    .contentContainer {
+        padding: 28px 0px 0px;
+    }
+
+    &.layoutWithSider {
+        min-height: 100%;
+    }
+
+    .stepDataList {
+        :global {
+            .ant-card-body {
+                padding: 10px;
+            }
+            
+            .ant-steps-item-description h4.ant-typography {
+                font-size: 17px;
+            }
+
+            .ant-progress-inner {
+                width: 30px !important;
+                height: 30px !important;
+            }
+     
+            .ant-steps-item-icon {
+                width: 22px;
+                height: 22px;
+            }
+
+            .ant-progress {
+                left: -4px;
+                top: 15px;
+            }
+
+            .ant-steps-item > .ant-steps-item-container > .ant-steps-item-tail {
+                top: 17px !important;
+                left: 9px !important;
+                padding: 30px 0 6px;
+            }
+        }
+
+       .exerciseDescription {
+           font-size: 13px;
+       }
+    }
+}

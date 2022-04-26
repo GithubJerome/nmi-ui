@@ -1,0 +1,114 @@
+@cardLinkColor: #096dd9;
+
+.cardProgressBox {
+    margin-top: 30px;
+}
+
+.courseDescription {
+    min-height: 55px;
+    overflow: hidden;
+}
+
+.cardTitleBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardTitleIcon {
+    background: #ccc;
+    color: white;
+    border-radius: 50%;
+    width: 32px;
+    text-align: center;
+    height: 32px;
+    margin-right: 5px;
+    flex: 0 0 32px;
+}
+
+.dataListCard {
+    :global {
+        .ant-card-head, 
+        .ant-card-head-title {
+            padding: 0;
+        }
+
+        .ant-avatar {
+            margin-right: 8px;
+        }
+
+        .extra-info {
+            .ant-typography {
+                margin-bottom: 0;
+            }
+        }
+        
+        /*
+        .ant-card-actions li:first-child {
+            width: 35% !important;
+        }
+        */
+
+        .ant-page-header-heading-title {
+            h5.ant-typography {
+                line-height: 1.2;
+                margin-bottom: 0;
+                font-size: 14px;
+            }
+        }
+
+        .ant-page-header-heading-left {
+            align-items: center;
+        }
+
+        .ant-card-body {
+            padding: 15px;
+
+            .ant-typography {
+                font-size: 13px;
+            }
+        }
+
+        .ant-card-head {
+            border-bottom: 0px;
+        }
+
+        .ant-page-header {
+            padding: 10px 40px 0px 15px;
+        }
+
+        .ant-page-header-heading-extra {
+            position: absolute;
+            right: 15px;
+        }
+
+        .course-card-subtitle {
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+        .ant-card-actions {
+            a {
+                color: @cardLinkColor !important;
+            }
+        }
+
+        .ant-list-footer {
+            width: 100px;
+            text-align: right;
+            margin-top: 10px;
+            padding-bottom: 0;
+            position: absolute;
+            right: 0;
+
+            button {
+                color:@cardLinkColor;
+                padding: 0;
+            }
+        }
+
+        .ant-list-pagination {
+            text-align: right;
+        }
+    }
+}

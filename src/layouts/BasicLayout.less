@@ -1,0 +1,175 @@
+.logo img{
+  height: 50px !important;
+  margin-top: 5px;
+}
+.footer {
+  background-color: #ffff;
+
+  :global {
+    .ant-pro-global-footer {
+      margin: 13px 0px;
+    }
+  }
+}
+
+:global {
+  .ant-layout-header {
+    height: 64px !important;
+  }
+
+  .ant-layout {
+    min-height: 100vh;
+  }
+
+  .ant-pro-top-nav-header-main.wide {
+    max-width: inherit;
+    padding-left: 10px;
+  }
+
+  .custom-layout .ant-pro-basicLayout-content {
+    margin: 0px;
+  }
+
+  .ant-pro-grid-content.wide {
+    margin-top: 10px;
+  }
+
+  .antd-pro-pages-user-login-style-main .antd-pro-pages-user-login-style-textBg input {
+    font-style: normal;
+  }
+  
+  .ant-pro-basicLayout.screen-sm,
+  .ant-pro-basicLayout.screen-xs {
+    & .antd-pro-layouts-basic-layout-logo img {
+      height: 30px !important;
+    }
+
+    & .antd-pro-components-global-header-index-action {
+      padding: 0px 5px;
+    }
+  }
+
+  .ant-table-footer{
+    background: transparent !important;
+  }
+}
+
+.textInput{
+  background-color: #f2f2f2 !important;
+  font-size: 14px;
+  color: #555 !important;
+  font-style: italic;
+
+  input {
+    background-color: #f2f2f2;
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+  }
+
+  .ant-select-selector {
+    background-color: #f2f2f2 !important;
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+  }
+}
+
+.textInput > .ant-select-selector {
+  background-color: #f2f2f2 !important;
+  font-size: 14px;
+  color: #555;
+  font-style: italic;
+}
+
+.vidTutsContainer {
+  :global {
+    .ant-modal-body {
+      padding-bottom: 0px;
+    }
+    .ant-list-pagination {
+      margin-top: 0px;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .ant-list-split.ant-list-something-after-last-item .ant-spin-container > .ant-list-items > .ant-list-item:last-child {
+      border-bottom: 0px;
+    }
+  }
+}
+
+.helpBubbleButton {
+  background: rgb(3, 218, 197);
+  color: #ffff;
+}
+
+.helpWatchVid {
+  text-align: justify;
+  padding: 5px 15px 0px 15px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  color: black;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: white;
+  }
+
+  &[disabled],
+  &[disabled]:hover,
+  &[disabled]:focus,
+  &[disabled]:active {
+    border-color: white;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: normal;
+  }
+  
+  :global {
+    .anticon {
+      padding-right: 13px;
+    }
+  }
+}
+
+
+.helpChatTut {
+  text-align: justify;
+  padding: 10px 15px 15px 15px;
+  font-weight: bold;
+  color: gray;
+  font-size: 15px;
+}
+
+.helpBubbleBoxTitle {
+  background: #00AE83;
+  color: white;
+  padding: 8px 0px;
+}
+
+.helpBubbleBox {
+  :global {
+    .ant-popover-title {
+      padding: 0px;
+    }
+    .ant-btn > .anticon + span {
+      margin-left: 15px;
+    }
+    .ant-card-body {
+      padding: 0 0 5px;
+    }
+
+    .ant-btn-link {
+      text-align: left;
+    }
+    .ant-btn-block {
+      margin-bottom: 10px;
+    }
+
+    .ant-btn-block span {
+      text-decoration: underline;
+    }
+  }
+}

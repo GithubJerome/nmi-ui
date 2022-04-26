@@ -1,0 +1,83 @@
+
+@import (css) url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import '~antd/es/style/themes/default.less';
+
+html,
+body,
+#root {
+  height: 100%;
+  font-family: Didact Gothic,Arial,sans-serif;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+  background: #e4e4e466 !important;
+}
+
+.ant-pro-top-nav-header {
+  box-shadow: none !important;
+  border-bottom: 1px solid;
+  height: 64px !important;
+}
+
+.ant-pro-top-nav-header .ant-pro-top-nav-header-menu {
+  text-align: right;
+  height: 64px;
+  line-height: 64px;
+}
+
+.ant-pro-top-nav-header-main.wide {
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 0;
+  height: 64px !important;
+}
+
+.ant-pro-top-nav-header-menu .ant-menu.ant-menu-horizontal {
+  border-bottom: 1px solid !important;
+  height: 64px !important;
+  line-height: 64px !important;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 兼容IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}

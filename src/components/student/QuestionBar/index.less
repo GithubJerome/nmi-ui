@@ -1,0 +1,27 @@
+.questionBar {
+  width: 100%;
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+  overflow: hidden;
+  vertical-align: middle;
+  border-radius: 0px;
+  height: 5px !important;
+  background-color: #c2f6f1;
+  .questionSuccess,
+  .questionFailed {
+      height: 5px !important;
+      border-right-width: 4px;
+      border-right-style: solid;
+      border-right-color: #c2f6f1;
+  }
+  & div:last-child {
+      border-right-width: 0px;
+  }
+  .questionSuccess {
+      background-color: #03dac5;
+  } 
+  .questionFailed {
+      background-color: #f23434;
+  }
+}

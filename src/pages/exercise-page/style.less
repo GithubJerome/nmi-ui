@@ -1,0 +1,734 @@
+.settingsTitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+
+.noMarginBottom {
+    margin-bottom: 0;
+}
+
+.textUnderline {
+    text-decoration: underline;
+}
+
+.textBg {
+    background-color: #f2f2f2;
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+    input {
+      background-color: #f2f2f2;
+      font-size: 14px;
+      color: #555;
+      font-style: italic;
+    }
+}
+
+.borderNone {
+    border: none;
+}
+
+.centerAlign {
+    text-align: center;
+}
+
+.img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.descriptions {
+    font-size: 12px;
+}
+
+.cardBox {
+    border: 1px solid #80808080 !important;
+    -webkit-box-shadow: 9px 12px 7px -7px rgba(0,0,0,0.09);
+    -moz-box-shadow: 9px 12px 7px -7px rgba(0,0,0,0.09);
+    box-shadow: 9px 12px 7px -7px rgba(0,0,0,0.09);
+}
+
+.warning {
+    color: #00b0f0;
+    font-weight: bold;
+}
+
+.error {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.bold {
+    color: #000000;
+    font-weight: bold;
+}
+
+.cardBox .ant-card-body {
+    padding-bottom: 20px;
+}
+
+.customBtn {
+    border: none;
+    opacity: 0.5;
+    box-shadow: none;
+}
+
+.changeBtnTxt {
+    color: black;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.flexRowToColumn {
+    flex-direction: column !important;
+}
+
+.layoutWithSider {
+    color: black;
+    background: #fff !important;
+
+    :global {
+
+        .ant-layout-content.no-transition {
+            transition: none !important;
+        }
+        .ant-layout-content {
+            transition: margin 200ms;
+        }
+    }
+}
+
+.btnLocked {
+    background-color: #77b7e4;
+    border-color: #77b7e4;
+    
+    &:hover, 
+    &:focus {
+        color: white;
+        background: #77b7e4;
+        border-color: #77b7e4;
+    }
+}
+
+.unlockedBoxRequirements {
+    :global {
+        .ant-card {
+            background: #03dac5;
+
+            .ant-card-body {
+                padding: 5px;
+            }
+
+            .ant-list-empty-text {
+                display: none;
+            }
+
+            .completed {
+                opacity: 0.7;
+            }
+
+            .ant-typography,
+            .ant-list-item-meta-description {
+                color: #fff;
+                font-size: 13px;
+            }
+
+            .ant-list-item {
+                border-bottom: 0px;
+                padding: 5px 0px;
+            }
+
+            .ant-list-item-meta-avatar {
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+.choicesBox {
+    :global {
+        .draggable-item {
+            border: 2px solid gray;
+            width: auto;
+            min-width: 60px;
+            padding: 0px 5px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            margin-right: 15px;
+            cursor: grab;
+            background: #fff;
+        }
+    }
+}
+
+.questionBoxContainer {
+    :global {
+        .ant-col  {
+            margin-right: 15px;
+        }
+    }
+}
+
+.dragBoxContainerMatch {
+    width: auto;
+    height: auto;
+    min-height: 54px;
+    min-width: 160px;
+
+    :global {
+        .draggable-item {
+            cursor: grab;
+            height: 100%;
+            width: 100%;
+            min-height: 54px;
+            padding: 5px 5px 5px 17px;
+            border-top: 2px solid #c8c8c8;
+            border-right: 2px solid #c8c8c8;
+            border-left: 2px solid #c8c8c8;
+            border-bottom: 2px solid #c8c8c8;
+            background: #fff;
+            margin: 0px -1px;
+            line-height: inherit;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+
+            .ant-typography {
+                align-self: center;
+                word-break: break-all;
+            }
+
+            &::after {
+                content: ' ';
+                width: 16px;
+                height: 20px;
+                border-right: 2px solid #c8c8c8;
+                border-bottom: 2px solid #c8c8c8;
+                border-top: 2px solid #c8c8c8;
+                position: absolute;
+                border-radius: 0px 200px 200px 00px;
+                left: -2px;
+                background: white;
+                top: 50%;
+                margin-top: -10px;
+                z-index: 1;
+            }
+        }
+
+        .smooth-dnd-container {
+            width: 100%;
+            height: 100%;
+            display: flex !important;
+        }
+        
+        .smooth-dnd-draggable-wrapper {
+            width: 100%;
+            display: inline-flex !important;
+        }
+
+        & .smooth-dnd-container {
+
+            &::after {
+                content: ' ';
+                width: 100%;
+                height: 100%;
+                border: 2px dashed #bcdaef;
+                border-left: 0px;
+                display: inline-block;
+                position: absolute;
+                left: -1px;
+                top: 0;
+            }
+        }
+    }
+}
+
+.choicesBoxMatch {
+    text-align: left;
+
+    :global {
+        .smooth-dnd-container.horizontal {
+            display: inline-block;
+        }
+
+        .draggable-item {
+            border: 2px solid #c8c8c8;
+            width: 160px;
+            height: auto;
+            min-height: 54px;
+            padding: 5px 5px 5px 17px;
+            text-align: center;
+            margin-right: 10px;
+            cursor: grab;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+
+            .ant-typography {
+                align-self: center;
+                word-break: break-all;
+            }
+        }
+
+        .smooth-dnd-draggable-wrapper {
+            position: relative;
+            margin-bottom: 10px;
+            display: inline-block !important;
+            transform: none !important;
+
+            &::after {
+                content: ' ';
+                width: 16px;
+                height: 20px;
+                border-right: 2px solid #c8c8c8;
+                border-bottom: 2px solid #c8c8c8;
+                border-top: 2px solid #c8c8c8;
+                position: absolute;
+                border-radius: 0px 200px 200px 00px;
+                left: 0px;
+                background: white;
+                top: 50%;
+                margin-top: -10px;
+                z-index: 1;
+            }
+        }
+
+        
+    }
+}
+
+.questionContainerMatch {
+    padding: 5px 0px;
+    border: 2px solid #c8c8c8;
+    height: auto;
+    width: auto;
+    min-height: 54px;
+    min-width: 160px;
+    display: flex;
+    justify-content: center;
+
+    :global {
+        .ant-typography {
+            padding: 0px 5px;
+            align-self: center;
+            word-break: break-all;
+        }
+    }
+
+    &::after {
+        content: ' ';
+        width: 16px;
+        height: 20px;
+        border-right: 2px solid #c8c8c8;
+        border-bottom: 2px solid #c8c8c8;
+        border-top: 2px solid #c8c8c8;
+        position: absolute;
+        border-radius: 0px 200px 200px 00px;
+        right: -16px;
+        background: white;
+        top: 50%;
+        margin-top: -10px;
+        z-index: 1;
+    }
+}
+
+.dragBoxContainer {
+    border: 2px dashed #c8c8c8;
+    width: auto;
+    min-width: 60px;
+    height: 60px;
+
+    :global {
+        .draggable-item {
+            cursor: grab;
+            background: #fff;
+            padding: 0px 5px;
+        }
+
+        .smooth-dnd-container {
+            width: 56px;
+            height: 56px;
+            line-height: 56px;
+        }
+    }
+}
+
+.drop-item-box {
+    border: 1px solid gray;
+}
+
+
+.exerciseBox {
+    :global {
+        .ant-card-body {
+            padding: 20px 0px 48px;
+        }
+
+        .ant-card-loading-content {
+            padding: 0px 48px;
+        }
+
+        .ant-progress {
+            .ant-progress-inner, 
+            .ant-progress-success-bg, 
+            .ant-progress-bg {
+                border-radius: 0px;
+                height: 5px !important;
+            }
+
+            .ant-progress-inner {
+                background-color: rgb(194, 246, 241);
+            }
+
+            .ant-progress-bg {
+                background-color: #f23434;
+            }
+
+            .ant-progress-success-bg {
+                background-color: #03dac5;
+            }
+        }
+    }
+}
+
+.cleanRowSpacing {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.cleanColSpacing {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.questionBoxDescription {
+    background-color: #e2eef7;
+    padding: 25px 0px 25px 65px;
+}
+
+.radioBox {
+    padding-left: 65px;
+    padding-right: 10px;
+}
+
+.choicesBox {
+    padding-left: 65px;
+    margin-top: 20px;
+}
+
+.exerciseBoxTitle {
+    padding: 0px 48px;
+}
+
+.exerciseDescription {
+    width: 100%;
+    padding: 0 48px;
+}
+
+.exerciseBoxQuestion {
+    margin-bottom: 50px;
+
+    :global {
+        .ant-row {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+
+            .ant-col {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+        }
+
+        /** Checkbox & Radio **/
+        .ant-checkbox-inner,
+        .ant-radio-inner,
+        .ant-radio-checked::after {
+            border: 2px solid #000;
+        }
+
+        .ant-checkbox,
+        .ant-radio {
+            margin-right: 15px;
+        }
+
+        .ant-radio {
+            top: -2px;
+        }
+
+        .ant-radio-inner::after {
+            top: 2px;
+            left: 2px;
+        }
+
+        .ant-checkbox-wrapper:hover .ant-checkbox-inner, 
+        .ant-checkbox:hover .ant-checkbox-inner, 
+        .ant-checkbox-input:focus + .ant-checkbox-inner, 
+        .ant-radio-wrapper:hover .ant-radio, 
+        .ant-radio:hover .ant-radio-inner, 
+        .ant-radio-input:focus + .ant-radio-inner{
+            border-color: #000;
+        }
+
+        .ant-checkbox-checked .ant-checkbox-inner,
+        .ant-radio-inner::after {
+            background-color: #000;
+        }
+
+        .ant-checkbox-checked::after {
+            border: 1px solid rgb(0, 0, 0);
+        }
+    }
+}
+
+.exerciseSummaryBtn,
+.exerciseContentBtn {
+    margin-top: 20px;
+    padding: 0 48px;
+
+    :global {
+        .ant-btn-default {
+            cursor: auto;
+        }
+        
+        .ant-row {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+
+            .ant-col {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+        }
+
+
+    }
+}
+
+.exerciseDragDropBox {
+    padding: 20px 0px 25px 50px;
+    font-size: 18px;
+}
+
+.inputAnswerBox {
+    min-width: 65px;
+    max-width: 200px;
+    width: 65px;
+    text-align: center;
+    background: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+    font-family: 'Arial' !important;
+    // top: -3px;
+    vertical-align: middle;
+    border-width: 2px;
+    border-color: #a0a8ae;
+
+    &:focus,
+    &:hover {
+        border-right-width: 2px !important;
+    }
+}
+
+.backSection {
+    padding: 28px 33px 0px;
+}
+
+.summaryContentBox {
+    padding: 0px 48px;
+}
+
+.exerciseOverviewBoxStartBtn {
+    margin-top: 20px;
+    padding: 0 48px;
+    text-align: right;
+}
+
+
+.exercisePagination {
+    :global {
+        .ant-space-item {
+            .ant-btn-primary {
+                background: #03dac5;
+                border-color: #03dac5;
+            }
+
+            .ant-btn:active,
+            .ant-btn:hover, .ant-btn:focus {
+                color: #03dac5;
+                border-color: #03dac5;
+            }
+
+            .ant-btn-primary:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+/** Mobile CSS Modifications */
+.isMobileSize {
+    &.layoutWithSider {
+        padding-bottom: 0px;
+        min-height: 100%;
+    }
+
+    .backSection {
+        padding: 28px 7px 0px;
+    }
+
+    .exerciseBoxTitle,
+    .exerciseDescription,
+    .summaryContentBox {
+        padding: 0px 24px;
+    }
+
+    .questionBoxDescription,
+    .radioBox {
+        padding-left: 41px;
+    }
+    
+    .exerciseDragDropBox {
+        padding-left: 26px;
+    }
+
+    .nextBtnBox button {
+        margin-right: 61px;
+    }
+
+    .exerciseBox {
+        :global {
+            .ant-card-loading-content {
+                padding: 0px 24px;
+            }
+        }
+    }
+
+    .exercisePagination {
+        // flex-direction: row;
+        display: block;
+        margin-top: 0px !important;
+
+        :global {
+            .ant-space {
+                display: block;
+
+                .ant-space-item {
+                    display: inline-block;
+                    margin: 0px 2px 2px !important;
+                }
+            }
+        }
+    }
+
+    .exerciseContentBtn {
+        padding: 0px 4px;
+    }
+
+    .exerciseSummaryBtn {
+        margin-top: 0px;
+        padding: 0px 65px;
+
+        :global {
+            .ant-row {
+                display: block;
+            }
+
+            .ant-col {
+                text-align: center !important;
+            }
+
+            button {
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .exerciseContentFooter,
+    .summaryFooterBox {
+        position: fixed;
+        bottom: 0;
+        padding-bottom: 18px;
+        background: #fff;
+        width: 100%;
+        z-index: 2;
+        min-height: 90px;
+    }
+
+    .choicesBox {
+        padding-left: 20px;
+
+        :global {
+            .smooth-dnd-container.horizontal > .smooth-dnd-draggable-wrapper {
+                display: inline-block;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.frac {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    letter-spacing: 0.001em;
+    text-align: center;
+}
+.enuDenu {
+    display: block;
+    padding: 0.1em;
+}
+.symbol {
+    margin: 10px 15px 10px;
+    // width: 60%;
+    border-bottom: thin solid black;
+}
+
+
+
+.dividerBox {
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.fractionalBox {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+
+    .dividerLine1 {
+        border-top: 3px solid black;
+    }
+    
+
+    .operator1 {
+        display: inline-block;
+        vertical-align: text-bottom;
+        margin-top: -10px;
+    }
+
+    .operator2 {
+        display: inline-block;
+        vertical-align: text-bottom;
+        margin-top: -1px;
+    }
+
+    .operator3 {
+        display: inline-block;
+        vertical-align: text-bottom;
+        margin-top: -7px;
+    }
+}
+
+.FITBDquestion {
+    .dividerBox {
+        margin-right: 0px;
+    }
+}
+
+.FITBTquestion {
+}
